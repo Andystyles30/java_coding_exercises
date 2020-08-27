@@ -4,8 +4,11 @@ import java.util.List;
 
 public class Exercise001 {
     public String capitalizeWord(String word) {
-        // Add your code here
-        return "";
+        if(word == null || word.isEmpty()) {
+            return word;
+        }
+    
+        return word.substring(0, 1).toUpperCase() + word.substring(1);
     }
 
     public String generateInitials(String firstName, String lastName) {
