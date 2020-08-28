@@ -27,6 +27,17 @@ public class Exercise001 {
     }
 
     public int countLinuxUsers(List<User> users) {
-        return 0;
+        // DID TRY THIS BUT LAMBDA EXPRESSIONS NOT SUPPORTED IN THIS VERSION
+        // long countLinuxUsers = users
+        //     .stream()
+        //     .filter(elem -> elem.getType() == "Linux")
+        //     .count();
+        int countLinuxUsers = 0;
+        for (User user : users) {
+          if (user.getType() == "Linux") {
+            countLinuxUsers++;
+          }
+        }
+        return countLinuxUsers;
     }
 }
