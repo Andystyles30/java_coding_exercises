@@ -35,7 +35,7 @@ public class Exercise001 {
         int countLinuxUsers = 0;
         for (User user : users) {
             if (user.getType() == "Linux") {
-            countLinuxUsers++;
+                countLinuxUsers++;
             }
         }
         return countLinuxUsers;
