@@ -16,7 +16,9 @@ public class Exercise001 {
     }
 
     public double addVat(double originalPrice, double vatRate) {
-        return 0.0;
+        double vat = ( originalPrice / 100 ) * vatRate;
+        double result = originalPrice + vat;
+        return Math.round(result * 100.0) / 100.0; // Using this to round to two decimal places - theres probably a better solution.
     }
 
     public String reverse(String sentence) {
