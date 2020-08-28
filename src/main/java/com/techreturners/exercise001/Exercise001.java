@@ -22,7 +22,8 @@ public class Exercise001 {
     }
 
     public String reverse(String sentence) {
-        return "";
+        String sentenceReversed = new StringBuilder(sentence).reverse().toString();
+        return sentenceReversed;
     }
 
     public int countLinuxUsers(List<User> users) {
